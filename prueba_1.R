@@ -39,12 +39,13 @@ max(hh_ok$n)
 
 #Pregunta 4
 
-maxbedu <- (epa_http[epa_http$host %like% '.edu' & epa_http$url %like% '.txt' ,]) 
+maxbedu <- (epa_http[epa_http$host %like% '.edu' & epa_http$url %like% '.txt$' ,]) 
 
 sum_pp <- parse_number(maxbedu$bytes, na = c("-", 0), locale = default_locale(), trim_ws = TRUE)
 
 
 sum(sum_pp,na.rm = TRUE)
+
 
 #pregunta 5
 
