@@ -13,3 +13,11 @@ epa_http <- tidyr::separate(epa_http, request, c("tipo", "url", "protocolo"), se
 
 View(epa_http)
 
+
+View(nrow(epa_http))
+
+
+View(ncol(epa_http))
+
+
+
