@@ -1,5 +1,5 @@
 #Carga de CSV 
-epa_http <- read.table("epa-http/epa-http.csv",sep = " ", quote = '"', fill = TRUE)
+epa_http <- read.table("C:/Users/nelsonry/Downloads/prueba_1/epa-http/epa-http.csv",sep = " ", quote = '"', fill = TRUE)
 colnames(epa_http) <-c("host", "timestamp", "request", "status", "bytes")
 
 library(stringr)
